@@ -54,10 +54,10 @@ public class connexion {
 		
 		Label lblNewLabel = new Label(shlSconnexion, SWT.NONE);
 		lblNewLabel.setBounds(48, 77, 101, 25);
-		lblNewLabel.setText("Identifiant");
+		lblNewLabel.setText("Identifiant"); //Identifiant de l'utilisateur
 		
 		Label lblMotDePasse = new Label(shlSconnexion, SWT.NONE);
-		lblMotDePasse.setText("Mot de passe");
+		lblMotDePasse.setText("Mot de passe"); //Mot de passe de l'utilisateur
 		lblMotDePasse.setBounds(48, 145, 120, 25);
 		
 		text_1 = new Text(shlSconnexion, SWT.BORDER);
@@ -65,7 +65,6 @@ public class connexion {
 		
 		Button btnConnexion = new Button(shlSconnexion, SWT.NONE);
 		btnConnexion.setBounds(229, 210, 105, 35);
-		btnConnexion.setText("Connexion");
-
+		btnConnexion.setText("Connexion"); //Boutton de connexion
 	}
 }
