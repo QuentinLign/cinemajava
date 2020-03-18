@@ -19,7 +19,7 @@ public class interfacecinema {
 	}
 
 	/**
-	 * Open the window.
+	 * Open the window
 	 */
 	public void open() {
 		Display display = Display.getDefault();
