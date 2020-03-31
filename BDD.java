@@ -11,8 +11,8 @@ public class BDD {
 //Connexion à la BDD
 public void insert(String nom) {
 String url="jdbc:mysql://localhost/restauration?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-String user="root";
-String password ="";
+String user="root"; //Utilisateur de la BDD
+String password =""; //Mot de passe de la BDD
 //-->
 String name = "'RESTAURATION'";
 
@@ -22,8 +22,8 @@ Connection cnx = DriverManager.getConnection(url,user,password);
 Statement stmt = cnx.createStatement();
 //Execution des requêtes
        ResultSet rs;    
-       stmt.executeUpdate("INSERT INTO reservations (nom, classe, jours, DP, regimealimentaire, somme, role)" + "VALUES ('"+nom+"'");
-       System.out.println("insertion reussie !");
+       stmt.executeUpdate("INSERT INTO reservations (nom, classe, jours, DP, regimealimentaire, somme, role)" + "VALUES ('"+nom+"'"); //Exécution de l'insertion des requêtes
+       System.out.println("insertion reussie !"); //Confirmation
 
        //Message d'erreur
            cnx.close();
