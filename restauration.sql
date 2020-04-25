@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 18 mars 2020 à 15:49
+-- Généré le :  sam. 25 avr. 2020 à 15:16
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -53,7 +53,14 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `login` varchar(30) COLLATE utf8_bin NOT NULL,
   `mdp` varchar(100) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Déchargement des données de la table `utilisateurs`
+--
+
+INSERT INTO `utilisateurs` (`id`, `login`, `mdp`) VALUES
+(1, 'test', 'test');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
