@@ -14,8 +14,8 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
-public class ajouterprof {
-
+public class ajouterprof { //Classe ajouterprof
+//Variables
 	protected Shell shlAjouterUnProf;
 	private Text text;
 	private Text text_1;
