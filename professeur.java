@@ -10,8 +10,8 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.wb.swt.SWTResourceManager;
 import org.eclipse.swt.widgets.TableItem;
 
-public class professeur {
-
+public class professeur { //Classe professeur
+//Variables
 	protected Shell shlEspaceProfesseur;
 	private Table table;
 
@@ -56,27 +56,27 @@ public class professeur {
 		table.setHeaderVisible(true);
 		table.setLinesVisible(true);
 		
-		TableColumn tblclmnNewColumn = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn.setWidth(187);
-		tblclmnNewColumn.setText("Nom");
+		TableColumn tblclmnNom = new TableColumn(table, SWT.NONE); //Table nom du professeur
+		tblclmnNom.setWidth(187);
+		tblclmnNom.setText("Nom");
 		
-		TableColumn tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_1.setWidth(100);
-		tblclmnNewColumn_1.setText("Cantine ?");
+		TableColumn tblclmnCantine = new TableColumn(table, SWT.NONE); //Table cantine
+		tblclmnCantine.setWidth(100);
+		tblclmnCantine.setText("Cantine ?");
 		
-		TableColumn tblclmnNewColumn_2 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_2.setWidth(303);
-		tblclmnNewColumn_2.setText("Jours");
+		TableColumn tblclmnJours = new TableColumn(table, SWT.NONE); //Table jours
+		tblclmnJours.setWidth(303);
+		tblclmnJours.setText("Jours");
 		
-		TableColumn tblclmnNewColumn_3 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_3.setWidth(127);
-		tblclmnNewColumn_3.setText("DP / Externe");
+		TableColumn tblclmnDPEXTERNE = new TableColumn(table, SWT.NONE); //Table DP Externe
+		tblclmnDPEXTERNE.setWidth(127);
+		tblclmnDPEXTERNE.setText("DP / Externe");
 		
-		TableColumn tblclmnNewColumn_4 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_4.setWidth(253);
-		tblclmnNewColumn_4.setText("regime alimentaire");
+		TableColumn tblclmnregimealimentaire = new TableColumn(table, SWT.NONE); //Table régime alimentaire
+		tblclmnregimealimentaire.setWidth(253);
+		tblclmnregimealimentaire.setText("regime alimentaire");
 		
-		TableColumn tblclmnSomme = new TableColumn(table, SWT.NONE);
+		TableColumn tblclmnSomme = new TableColumn(table, SWT.NONE); //Table Somme
 		tblclmnSomme.setWidth(130);
 		tblclmnSomme.setText("Somme");
 		
