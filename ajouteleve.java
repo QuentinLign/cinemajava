@@ -14,9 +14,9 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
-public class ajouteleve {
-
-	protected Shell shlAjouterUnEleve;
+public class ajouteleve { //Classe ajouteleve
+//Variables
+	protected Shell shlAjouterUnEleve; 
 	private Text text;
 	private Text text_1;
 
