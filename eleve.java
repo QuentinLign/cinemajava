@@ -11,8 +11,8 @@ import org.eclipse.wb.swt.SWTResourceManager;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
-public class eleve {
-
+public class eleve { //Classe eleve
+//Variables
 	protected Shell shlEspaceAdmin;
 	private Table table;
 
@@ -58,19 +58,19 @@ public class eleve {
 		table.setHeaderVisible(true);
 		table.setLinesVisible(true);
 		
-		TableColumn tblclmnNomlve = new TableColumn(table, SWT.NONE);
+		TableColumn tblclmnNomlve = new TableColumn(table, SWT.NONE); //Table nom eleve
 		tblclmnNomlve.setWidth(130);
 		tblclmnNomlve.setText("Nom \u00E9l\u00E8ve");
 		
-		TableColumn tblclmnClasse = new TableColumn(table, SWT.NONE);
+		TableColumn tblclmnClasse = new TableColumn(table, SWT.NONE); //Table classe
 		tblclmnClasse.setWidth(100);
 		tblclmnClasse.setText("Classe");
 		
-		TableColumn tblclmnJours = new TableColumn(table, SWT.NONE);
+		TableColumn tblclmnJours = new TableColumn(table, SWT.NONE); //Table jours
 		tblclmnJours.setWidth(87);
 		tblclmnJours.setText("Cantine ?");
 		
-		TableColumn tblclmnNewColumn = new TableColumn(table, SWT.NONE);
+		TableColumn tblclmnNewColumn = new TableColumn(table, SWT.NONE); 
 		tblclmnNewColumn.setWidth(327);
 		tblclmnNewColumn.setText("Jours a la cantine");
 		
@@ -94,17 +94,17 @@ public class eleve {
 		btnNewButton.setBounds(10, 3, 255, 35);
 		btnNewButton.setText("Trier par ordre alphab\u00E9tique");
 		
-		Button btnTrierParClasse = new Button(shlEspaceAdmin, SWT.NONE);
+		Button btnTrierParClasse = new Button(shlEspaceAdmin, SWT.NONE); //Table trier les données par classe
 		btnTrierParClasse.setText("Trier par classe");
 		btnTrierParClasse.setForeground(SWTResourceManager.getColor(SWT.COLOR_BLACK));
 		btnTrierParClasse.setBounds(302, 3, 255, 35);
 		
-		Button btnAjouterUnlve = new Button(shlEspaceAdmin, SWT.NONE);
+		Button btnAjouterUnlve = new Button(shlEspaceAdmin, SWT.NONE); //Bouton pour ajouter un élève
 		btnAjouterUnlve.setForeground(SWTResourceManager.getColor(SWT.COLOR_DARK_GREEN));
 		btnAjouterUnlve.setBounds(109, 619, 167, 35);
 		btnAjouterUnlve.setText("Ajouter un \u00E9l\u00E8ve");
 		
-		Button btnModifierUnlve = new Button(shlEspaceAdmin, SWT.NONE);
+		Button btnModifierUnlve = new Button(shlEspaceAdmin, SWT.NONE); //Bouton pour modifier un élève
 		btnModifierUnlve.setForeground(SWTResourceManager.getColor(255, 165, 0));
 		btnModifierUnlve.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -114,10 +114,12 @@ public class eleve {
 		btnModifierUnlve.setText("Modifier un \u00E9l\u00E8ve");
 		btnModifierUnlve.setBounds(453, 619, 167, 35);
 		
+		
 		Button btnAjouterUnlve_1_1 = new Button(shlEspaceAdmin, SWT.NONE);
 		btnAjouterUnlve_1_1.setForeground(SWTResourceManager.getColor(220, 20, 60));
 		btnAjouterUnlve_1_1.setText("Supprimer un \u00E9l\u00E8ve");
 		btnAjouterUnlve_1_1.setBounds(806, 619, 167, 35);
 
 	}
+
 }
