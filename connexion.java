@@ -3,12 +3,20 @@ package interfacej;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Button;
 
-public class connexion {
-
+public class connexion { //Classe connexion
+//Variables
 	protected Shell shlSconnexion;
 	private Text text;
 	private Text text_1;
@@ -42,7 +50,7 @@ public class connexion {
 	}
 
 	/**
-	 * Create contents of the window.
+	 * Create contents of the window. Formulaire de connexion
 	 */
 	protected void createContents() {
 		shlSconnexion = new Shell();
@@ -64,7 +72,12 @@ public class connexion {
 		text_1.setBounds(178, 139, 224, 31);
 		
 		Button btnConnexion = new Button(shlSconnexion, SWT.NONE);
-		btnConnexion.setBounds(229, 210, 105, 35);
-		btnConnexion.setText("Connexion"); //Boutton de connexion
+		btnConnexion.setBounds(145, 212, 105, 35);
+		btnConnexion.setText("Connexion");
+		
+	
+
+
 	}
 }
+
